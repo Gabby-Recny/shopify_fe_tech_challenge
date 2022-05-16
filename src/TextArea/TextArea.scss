@@ -1,7 +1,7 @@
 .form-section {
     height: calc(100vh - 153px);
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
 }
 
 form {
@@ -9,7 +9,7 @@ form {
     flex-direction: column;
     height: 100%;
     width: calc(100vw - 328px);
-    border: 2px solid palevioletred;
+    // border: 2px solid palevioletred;
 }
 
 label {

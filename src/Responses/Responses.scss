@@ -1,0 +1,23 @@
+.single-response {
+    background-color: #EEEEEE;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+}
+
+.response-layout {
+    border: 5px solid forestgreen;
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+}
+
+.response-layout > label {
+    font-weight: bold;
+    border: 2px solid goldenrod;
+
+}
+
+.response-layout > p {
+    border: 2px solid aqua;
+}
