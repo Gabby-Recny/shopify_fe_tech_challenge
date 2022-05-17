@@ -2,33 +2,34 @@ import React, {useState} from "react";
 import './TextArea.scss';
 
 const TextArea = () => {
-    const [ textAreaInput, setTextAreaInput ] = useState('')
+    const [ prompt, setPrompt ] = useState('')
 
-    const submitResponse = (event) => {
+    const submitPrompt = (event) => {
         event.preventDefault()
         console.log('Response submitted')
+        console.log(prompt)
     }
+
     return (
-        <section className='form-section'>
             <form>
                 <label htmlFor='textArea'>Enter prompt</label>
                 <section className='input-area'>
                     <textarea 
                         type='text'
+                        id='textArea'
                         className='text-area'
                         // rows='20'
                         // columns='50'
-                        value={textAreaInput} 
-                        onChange={e => setTextAreaInput(e.target.value)} 
+                        value={prompt} 
+                        onChange={e => setPrompt(e.target.value)} 
                     />
                 </section>
                 <button
                     className='submit-btn'
                     type='submit'
-                    onClick={e => submitResponse(e)}
+                    onClick={e => submitPrompt(e)}
                     >Submit</button>
             </form>
-        </section>
     )
 }
 
