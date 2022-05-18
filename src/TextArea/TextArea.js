@@ -1,13 +1,18 @@
 import React, {useState} from "react";
 import './TextArea.scss';
+import { postNewResponse } from "../utilities/apiCalls";
+import { cleanResponseData } from "../utilities/cleanData";
 
 const TextArea = () => {
     const [ prompt, setPrompt ] = useState('')
 
     const submitPrompt = (event) => {
         event.preventDefault()
-        console.log('Response submitted')
-        console.log(prompt)
+        console.log('line 10 Prompt:', prompt)
+
+        postNewResponse(prompt)
+            .then(data => cleanResponseData(data))
+            .catch(error => console.log('Line 15 Error:', error))
     }
 
     return (
