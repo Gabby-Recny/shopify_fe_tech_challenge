@@ -8,7 +8,7 @@ const TextArea = ({createNewResponse}) => {
 
     const submitPrompt = (event) => {
         event.preventDefault()
-        console.log('line 10 Prompt:', promptInput)
+        // console.log('line 10 Prompt:', promptInput)
 
         postNewResponse(prompt)
             .then(data => cleanResponseData(data))

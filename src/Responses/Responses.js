@@ -11,9 +11,10 @@ const Responses = ({responses, prompt}) => {
                 id={response.id}
                 generatedResponse={response.generatedResponse}
                 prompt={prompt}
+                created={response.created}
             />
         )
-    })
+    }).sort((a, b) => b.created - a.created)
 
     console.log('Formatted Responses Line 19 in Responses', formattedResponses)
     return (

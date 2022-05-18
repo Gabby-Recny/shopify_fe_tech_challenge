@@ -2,7 +2,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1em;
 
 }
 
@@ -14,17 +14,31 @@ label {
 
 
 .submit-btn {
-    width: 70px;
-    height: 30px;
+    width: 7em;
+    height: 2.5em;
     background-color: #2A5BD6;
     color: white;
-    cursor: pointer;
     border: none;
     border-radius: 3px;
+    font-size: normal;
+    text-align: center;
     align-self: flex-end;
+    margin-top: 5px;
+    &:hover {
+        cursor: pointer;
+
+    }
 }
 
 textarea {
     width: calc(100% - 5px);
-    height: 6rem;
+    height: 10rem;
+}
+
+@media (max-width:480px)  {
+    .submit-btn {
+        align-self: center;
+        width: 6em;
+        height: 2em;
+    }
 }

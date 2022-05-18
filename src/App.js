@@ -10,10 +10,10 @@ function App() {
   const createNewResponse = (newResponse, newPrompt) => {
     // console.log('New Response App Line 11', newResponse)
     console.log('New Prompt App Line 12', newPrompt)
-
-    setAllResponses([...allResponses, newResponse])
     setPrompt(newPrompt)
-    console.log('Set prompt App Line 16', prompt)
+    setAllResponses([...allResponses, newResponse])
+    setPrompt('')
+    // console.log('Set prompt App Line 16', prompt)
   }
   return (
     <main>
