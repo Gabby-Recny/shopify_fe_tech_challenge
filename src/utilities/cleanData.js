@@ -1,4 +1,5 @@
 export const cleanResponseData = (data) => {
+    console.log('Data cleanData Line 2', data)
     return {
         id: data.id,
         generatedResponse: data[0].text
