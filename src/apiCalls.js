@@ -3,7 +3,7 @@ export const postNewResponse = (newPrompt) => {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
+            Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`
         },
         body: JSON.stringify({
             prompt: `${newPrompt}`,
@@ -11,7 +11,7 @@ export const postNewResponse = (newPrompt) => {
             max_tokens: 64,
             top_p: 1.0,
             frequency_penalty: 0.0,
-            presence_penality: 0.0,
+            presence_penalty: 0.0
         })
     })
     .then(response => checkResponse(response))
@@ -19,7 +19,8 @@ export const postNewResponse = (newPrompt) => {
 
 const checkResponse = (response) => {
     if (!response.ok) {
-        console.log(response)
+        console.log('Response', response)
+        console.log('Response MEssage', response.message)
         throw new Error(response.message)
     } else {
         return response.json()
