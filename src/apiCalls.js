@@ -1,9 +1,9 @@
-export const postNewResponses = (newPrompt) => {
+export const postNewResponse = (newPrompt) => {
     return fetch('https://api.openai.com/v1/engines/text-curie-001/completions', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.REACT_APP_API_KEY}`
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
         },
         body: JSON.stringify({
             prompt: `${newPrompt}`,
@@ -19,7 +19,8 @@ export const postNewResponses = (newPrompt) => {
 
 const checkResponse = (response) => {
     if (!response.ok) {
-        throw new Error(`Error`)
+        console.log(response)
+        throw new Error(response.message)
     } else {
         return response.json()
     }

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './TextArea.scss';
+import { postNewResponse } from "../apiCalls";
 
 const TextArea = () => {
     const [ prompt, setPrompt ] = useState('')
@@ -8,6 +9,10 @@ const TextArea = () => {
         event.preventDefault()
         console.log('Response submitted')
         console.log(prompt)
+
+        postNewResponse(prompt)
+            .then(data => console.log('Response data', data))
+            .catch(error => console.log('Line 15 Error:', error))
     }
 
     return (
