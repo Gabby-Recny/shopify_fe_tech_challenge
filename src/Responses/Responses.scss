@@ -4,24 +4,3 @@
     justify-content: space-evenly;
 }
 
-.single-response {
-    background-color: #EEEEEE;
-    width: 100%;
-    height: calc(100% - 100px);
-    overflow-y: scroll;
-    padding: 3%;
-    white-space: pre-line;
-}
-
-.response-layout {
-    font-size: 1em;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 1rem;
-    align-items: flex-start;
-}
-
-.response-layout > label {
-    font-weight: bold;
-}
-
