@@ -28,9 +28,7 @@ const TextArea = ({createNewResponse}) => {
                     <textarea 
                         type='text'
                         id='textArea'
-                        className='text-area'
-                        // rows='20'
-                        // columns='50'
+                        name='textArea'
                         value={promptInput} 
                         onChange={e => setPromptInput(e.target.value)} 
                     />
