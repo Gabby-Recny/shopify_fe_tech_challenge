@@ -1,32 +1,19 @@
 import React, {useState} from "react";
 import './TextArea.scss';
-import { postNewResponse } from "../apiCalls";
+import { postNewResponse } from "../utilities/apiCalls";
+import { cleanResponseData } from "../utilities/cleanData";
 
 const TextArea = () => {
     const [ prompt, setPrompt ] = useState('')
 
     const submitPrompt = (event) => {
         event.preventDefault()
-        console.log('Response submitted')
-        console.log(prompt)
+        console.log('line 10 Prompt:', prompt)
 
         postNewResponse(prompt)
-            .then(data => console.log('Response data', data))
+            .then(data => cleanResponseData(data))
             .catch(error => console.log('Line 15 Error:', error))
     }
-
-    //Response Object from Fulfilled Promise
-//     Response data 
-// {id: 'cmpl-592Ly8MOcSnOCdJ8cFVYCxat4jilf', object: 'text_completion', created: 1652835682, model: 'text-curie-001', choices: Array(1)}
-// choices: Array(1)
-// 0: {text: '\n1. Be successful.\n\n2. Be liked by people.\n\n3. Be respected by people.\n\n4. Be feared by people.', index: 0, logprobs: null, finish_reason: 'stop'}
-// length: 1
-// [[Prototype]]: Array(0)
-// created: 1652835682
-// id: "cmpl-592Ly8MOcSnOCdJ8cFVYCxat4jilf"
-// model: "text-curie-001"
-// object: "text_completion"
-// [[Prototype]]: Object
 
     return (
             <form>
