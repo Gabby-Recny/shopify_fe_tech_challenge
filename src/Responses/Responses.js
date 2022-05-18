@@ -2,7 +2,7 @@ import React from "react";
 import './Responses.scss';
 import ResponseCard from '../ResponseCard/ResponseCard.js'
 
-const Responses = ({responses}) => {
+const Responses = ({responses, prompt}) => {
 
     const formattedResponses = responses.map(response => {
         return (
@@ -10,8 +10,7 @@ const Responses = ({responses}) => {
                 key={response.id}
                 id={response.id}
                 generatedResponse={response.generatedResponse}
-                //Need to bring in input prompt
-                // prompt={PROMPT}
+                prompt={prompt}
             />
         )
     })

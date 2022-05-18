@@ -13,10 +13,10 @@ const TextArea = ({createNewResponse}) => {
         postNewResponse(prompt)
             .then(data => cleanResponseData(data))
             .then(cleanedData => {
-                console.log('Cleaned Data TextArea Line 16', cleanedData)
-                console.log('Prompt Input TextArea Line 17', promptInput)
+                // console.log('Cleaned Data TextArea Line 16', cleanedData)
+                // console.log('Prompt Input TextArea Line 17', promptInput)
                 createNewResponse(cleanedData, promptInput)
-                // setPromptInput('')
+                setPromptInput('')
             })
             .catch(error => console.log('Line 15 Error:', error))
     }
