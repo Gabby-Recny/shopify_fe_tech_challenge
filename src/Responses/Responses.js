@@ -15,6 +15,8 @@ const Responses = ({responses}) => {
             />
         )
     })
+
+    console.log('Formatted Responses Line 19 in Responses', formattedResponses)
     return (
         <>
             <h2>Responses</h2>

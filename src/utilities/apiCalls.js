@@ -20,7 +20,6 @@ export const postNewResponse = (newPrompt) => {
 const checkResponse = (response) => {
     if (!response.ok) {
         console.log('Response', response)
-        console.log('Response MEssage', response.message)
         throw new Error(response.message)
     } else {
         return response.json()
