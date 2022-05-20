@@ -3,7 +3,7 @@ import './TextArea.scss';
 import { postNewResponse } from "../utilities/apiCalls";
 import { cleanResponseData } from "../utilities/cleanData";
 
-const TextArea = ({createNewResponse}) => {
+const TextArea = ({addNewResponse}) => {
     const [ promptInput, setPromptInput ] = useState('')
 
     const submitPrompt = (event) => {
@@ -18,8 +18,7 @@ const TextArea = ({createNewResponse}) => {
                     prompt: promptInput,
                     responseData: cleanedData,
                 }
-                // console.log('NEW RESPONSE', newResponse)
-                createNewResponse(newResponse)
+                addNewResponse(newResponse)
                 setPromptInput('')
             })
             .catch(error => console.log('Line 15 Error:', error))
