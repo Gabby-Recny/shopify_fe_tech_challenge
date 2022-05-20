@@ -2,9 +2,13 @@ import React, {useState} from 'react';
 import './App.scss';
 import TextArea from './TextArea/TextArea';
 import Responses from './Responses/Responses';
+import useLocalStorage from './utilities/useLocalStorage';
 
 function App() {
-  const [ responseLog, setResponseLog ] = useState([])
+
+  const [ responseLog, setResponseLog ] = useLocalStorage("responseLog", [])
+
+  // const [ responseLog, setResponseLog ] = useState([])
 
   const addNewResponse = (newResponse) => {
     setResponseLog([newResponse, ...responseLog])
