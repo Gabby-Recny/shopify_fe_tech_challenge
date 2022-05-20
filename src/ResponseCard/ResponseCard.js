@@ -1,7 +1,7 @@
 import React from 'react';
 import './ResponseCard.scss';
 
-const ResponseCard = ({created, generatedResponse, prompt}) => {
+const ResponseCard = ({generatedResponse, prompt}) => {
     return (
         <article className='response-card'>
             <section className='response-layout'>
@@ -11,10 +11,9 @@ const ResponseCard = ({created, generatedResponse, prompt}) => {
             <br></br>
             <section className='response-layout'>
                 <label htmlFor='written-response'>Response:</label>
-                <span name='written-response' id='written-response'>
-                    <p>This is a response RIGHT HERE{generatedResponse}</p>
-                    {/* {generatedResponse} */}
-                </span>
+                    <span name='written-response' id='written-response'>
+                        {generatedResponse.trim()}
+                    </span>
             </section>
 
         </article>

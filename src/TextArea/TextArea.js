@@ -8,14 +8,18 @@ const TextArea = ({createNewResponse}) => {
 
     const submitPrompt = (event) => {
         event.preventDefault()
-        // console.log('line 10 Prompt:', promptInput)
+        console.log('line 11 Prompt:', promptInput)
 
         postNewResponse(prompt)
             .then(data => cleanResponseData(data))
             .then(cleanedData => {
-                // console.log('Cleaned Data TextArea Line 16', cleanedData)
-                // console.log('Prompt Input TextArea Line 17', promptInput)
-                createNewResponse(cleanedData, promptInput)
+                console.log('CLEANED DATA', cleanedData)
+                const newResponse = {
+                    prompt: promptInput,
+                    responseData: cleanedData,
+                }
+                // console.log('NEW RESPONSE', newResponse)
+                createNewResponse(newResponse)
                 setPromptInput('')
             })
             .catch(error => console.log('Line 15 Error:', error))
