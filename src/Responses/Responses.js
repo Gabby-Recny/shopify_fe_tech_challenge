@@ -17,8 +17,6 @@ const Responses = ({responseLog}) => {
         )
     })
 
-    
-
     return (
         <>
             <h2>Responses</h2>

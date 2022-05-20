@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import './TextArea.scss';
+import './PromptInput.scss';
 import { postNewResponse } from "../utilities/apiCalls";
 import { cleanResponseData } from "../utilities/cleanData";
 
-const TextArea = ({addNewResponse}) => {
+const PromptInput = ({addNewResponse}) => {
     const [ promptInput, setPromptInput ] = useState('')
 
     const submitPrompt = (event) => {
@@ -46,4 +46,4 @@ const TextArea = ({addNewResponse}) => {
 }
 
 
-export default TextArea;
+export default PromptInput
