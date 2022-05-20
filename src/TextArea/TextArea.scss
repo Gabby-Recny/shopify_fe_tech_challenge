@@ -14,21 +14,31 @@ label {
 
 
 .submit-btn {
+    border-radius: 4px;
     width: 7em;
     height: 2.5em;
     background-color: #2A5BD6;
     color: white;
     border: none;
-    border-radius: 3px;
     font-size: normal;
     text-align: center;
     align-self: flex-end;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
     margin-top: 5px;
+    transition: 150ms ease;
+    transition-property: background-color, box-shadow, color;
     &:hover {
         cursor: pointer;
+        background-color: #008060;
+        color: #ffffff;
 
     }
+    &:focus {
+        background-color: #008060;
+        color: #ffffff;
+    }
 }
+
 
 textarea {
     width: calc(100% - 5px);

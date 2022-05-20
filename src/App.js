@@ -12,8 +12,11 @@ function App() {
     console.log('New Prompt App Line 12', newPrompt)
     setPrompt(newPrompt)
     setAllResponses([...allResponses, newResponse])
-    setPrompt('')
     // console.log('Set prompt App Line 16', prompt)
+  }
+
+  const clearPrompt = () => {
+    setPrompt('')
   }
   return (
     <main>
@@ -22,6 +25,8 @@ function App() {
         <TextArea createNewResponse={createNewResponse}/>
         <Responses responses={allResponses} prompt={prompt}/>
       </section>
+      <section className='curve'></section>
+
     </main>
   );
 }
