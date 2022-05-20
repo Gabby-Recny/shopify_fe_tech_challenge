@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.scss';
 import TextArea from './TextArea/TextArea';
 import Responses from './Responses/Responses';

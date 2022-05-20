@@ -19,7 +19,6 @@ export const postNewResponse = (newPrompt) => {
 
 const checkResponse = (response) => {
     if (!response.ok) {
-        console.log('Response Line 22 in apiCalls', response)
         throw new Error(response.message)
     } else {
         return response.json()
