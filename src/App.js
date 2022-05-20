@@ -22,7 +22,6 @@ function App() {
         <TextArea addNewResponse={addNewResponse}/>
         <Responses responseLog={responseLog}/>
       </section>
-      {/* <section className='curve'></section> */}
     </main>
   );
 }
