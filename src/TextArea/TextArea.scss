@@ -37,6 +37,13 @@ label {
         background-color: #008060;
         color: #ffffff;
     }
+
+    &:disabled {
+        background-color: #698ce2;
+        cursor: none;
+        transition: none;
+        transition-property: none;
+    }
 }
 
 

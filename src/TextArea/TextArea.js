@@ -38,6 +38,7 @@ const TextArea = ({addNewResponse}) => {
                 <button
                     className='submit-btn'
                     type='submit'
+                    disabled={!promptInput}
                     onClick={e => submitPrompt(e)}
                     >Submit</button>
             </form>
