@@ -3,20 +3,23 @@ import './TextArea.scss';
 import { postNewResponse } from "../utilities/apiCalls";
 import { cleanResponseData } from "../utilities/cleanData";
 
-const TextArea = ({createNewResponse}) => {
+const TextArea = ({addNewResponse}) => {
     const [ promptInput, setPromptInput ] = useState('')
 
     const submitPrompt = (event) => {
         event.preventDefault()
-        console.log('line 10 Prompt:', promptInput)
+        console.log('line 11 Prompt:', promptInput)
 
         postNewResponse(prompt)
             .then(data => cleanResponseData(data))
             .then(cleanedData => {
-                console.log('Cleaned Data TextArea Line 16', cleanedData)
-                console.log('Prompt Input TextArea Line 17', promptInput)
-                createNewResponse(cleanedData, promptInput)
-                // setPromptInput('')
+                console.log('CLEANED DATA', cleanedData)
+                const newResponse = {
+                    prompt: promptInput,
+                    responseData: cleanedData,
+                }
+                addNewResponse(newResponse)
+                setPromptInput('')
             })
             .catch(error => console.log('Line 15 Error:', error))
     }
@@ -28,9 +31,7 @@ const TextArea = ({createNewResponse}) => {
                     <textarea 
                         type='text'
                         id='textArea'
-                        className='text-area'
-                        // rows='20'
-                        // columns='50'
+                        name='textArea'
                         value={promptInput} 
                         onChange={e => setPromptInput(e.target.value)} 
                     />

@@ -2,21 +2,19 @@ import React from "react";
 import './Responses.scss';
 import ResponseCard from '../ResponseCard/ResponseCard.js'
 
-const Responses = ({responses}) => {
+const Responses = ({responseLog}) => {
 
-    const formattedResponses = responses.map(response => {
+    const formattedResponses = responseLog.map(response => {
         return (
             <ResponseCard
-                key={response.id}
-                id={response.id}
-                generatedResponse={response.generatedResponse}
-                //Need to bring in input prompt
-                // prompt={PROMPT}
+                key={response.responseData.id}
+                generatedResponse={response.responseData.generatedResponse}
+                prompt={response.prompt}
+                created={response.responseData.created}
             />
         )
     })
 
-    console.log('Formatted Responses Line 19 in Responses', formattedResponses)
     return (
         <>
             <h2>Responses</h2>
