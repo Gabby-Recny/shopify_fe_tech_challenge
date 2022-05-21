@@ -4,13 +4,15 @@ import ResponseCard from '../ResponseCard/ResponseCard.js'
 
 const Responses = ({responseLog}) => {
 
+    const errorMessage = `You don't have any responses from our API yet, type up and prompt and see what comes out!`
+
     const formattedResponses = responseLog.map(response => {
+        console.log('Response inside Containr Line 10', response)
         return (
             <ResponseCard
                 key={response.responseData.id}
                 generatedResponse={response.responseData.generatedResponse}
                 prompt={response.prompt}
-                created={response.responseData.created}
             />
         )
     })
@@ -19,7 +21,7 @@ const Responses = ({responseLog}) => {
         <>
             <h2>Responses</h2>
             <section className='responses-container'>
-                {formattedResponses}
+                {!formattedResponses.length ? errorMessage : formattedResponses}
             </section>  
         </>
     )

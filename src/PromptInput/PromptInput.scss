@@ -11,8 +11,6 @@ label {
     font-weight: bold;
 }
 
-
-
 .submit-btn {
     border-radius: 4px;
     width: 7em;
@@ -37,6 +35,17 @@ label {
         background-color: #008060;
         color: #ffffff;
     }
+
+    &:disabled {
+        background-color: #698ce2;
+        cursor: none;
+        transition: none;
+        transition-property: none;
+    }
+}
+
+.prompt-error-msg {
+    text-align: center;
 }
 
 
