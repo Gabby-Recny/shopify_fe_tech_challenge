@@ -9,12 +9,9 @@ const Main = () => {
   // const [ responseLog, setResponseLog ] = useLocalStorage("responseLog", [])
 
   const [ responseLog, setResponseLog ] = React.useState([])
-  // const [ response, setResponse ] = React.useState('')
 
 
   const addNewResponse = (newResponse) => {
-    console.log('New Response: App Line 14', newResponse)
-    // setResponse(newResponse)
     setResponseLog([newResponse, ...responseLog])
   }
 
@@ -28,16 +25,11 @@ const Main = () => {
     }
   }
 
-  // const checkResponses = response.responseData && <Responses responseLog={responseLog}/>;
-
-
-
   return (
     <main>
       <section className='main-container'>
         <h1>Fun with API</h1>
         <PromptInput checkResponse={checkResponse}/>
-        {/* {checkResponses} */}
         <Responses responseLog={responseLog}/>
       </section>
     </main>
