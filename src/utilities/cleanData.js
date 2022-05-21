@@ -1,8 +1,7 @@
 export const cleanResponseData = (data) => {
-    // console.log('Data cleanData Line 2', data)
+    console.log('Data cleanData Line 2', data)
     return {
         id: data.id,
-        created: data.created,
         generatedResponse: data.choices[0].text
     }
 }
