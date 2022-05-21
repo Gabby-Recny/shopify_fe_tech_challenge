@@ -19,7 +19,7 @@ const Responses = ({responseLog}) => {
 
     return (
         <>
-            <h2>Responses</h2>
+            <h2 className='responses-title'>Responses</h2>
             <section className='responses-container'>
                 {!formattedResponses.length ? errorMessage : formattedResponses}
             </section>  
