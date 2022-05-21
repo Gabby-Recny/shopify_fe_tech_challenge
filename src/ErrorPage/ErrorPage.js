@@ -1,5 +1,5 @@
 import React from "react";
-import crystalBall from './crystal-ball.png';
+import crystalBall from '../assets/crystal-ball.png';
 import './ErrorPage.scss';
 
 const ErrorPage = () => {
