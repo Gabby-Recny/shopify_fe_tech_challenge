@@ -20,7 +20,6 @@ const PromptInput = ({checkResponse}) => {
                     prompt: promptInput,
                     responseData: cleanedData,
                 }
-                // console.log('New Response in PromptInput Line 25', newResponse)
                 checkResponse(newResponse)
                 setPromptInput('')
 
