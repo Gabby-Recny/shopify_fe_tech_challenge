@@ -14,3 +14,25 @@ h2 {
 .error-page-msg {
     font-size: 1rem;
 }
+
+.error-page-btn {
+    padding: 2%;
+    width: 20vw;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1%;
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 2px black solid;
+    }
+
+    &:focus {
+        background-color: white;
+        color: black;
+        border: 2px black solid;
+    }
+}
