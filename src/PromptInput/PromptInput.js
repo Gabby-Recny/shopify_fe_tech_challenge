@@ -6,7 +6,7 @@ import Loader from '../Loader/Loader';
 
 const PromptInput = ({checkResponse}) => {
     const [ promptInput, setPromptInput ] = useState('')
-    const [ isLoading, setLoader ] = useState(false)
+    const [ isLoading, setLoader ] = useState(true)
     const [ error, setError ] = useState('')
 
     const submitPrompt = (event) => {
