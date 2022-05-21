@@ -1,0 +1,14 @@
+{
+    "id": "htkd-329874ry3h20rfh042r230984u",
+    "object": "text_completion",
+    "created": 1279347239,
+    "model": "text-curie:001",
+    "choices": [
+        {
+            "text": "A phenomenon called Raleigh scattering. The scattering refers to scattering electromagnetic radiation by particles of a smaller wavelength.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}
