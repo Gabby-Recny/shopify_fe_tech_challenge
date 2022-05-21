@@ -1,37 +1,18 @@
 import React from 'react';
 import './App.scss'; 
-import PromptInput from './PromptInput/PromptInput';
-import Responses from './Responses/Responses';
-import useLocalStorage from './utilities/useLocalStorage';
+import { Routes, Route } from 'react-router-dom';
+import ErrorPage from './ErrorPage/ErrorPage';
+import Main from './Main/Main';
 
-function App() {
-
-  // const [ responseLog, setResponseLog ] = useLocalStorage("responseLog", [])
-
-  const [ responseLog, setResponseLog ] = React.useState([])
-  // const [ response, setResponse ] = React.useState('')
-
-
-  const addNewResponse = (newResponse) => {
-    console.log('New Response: App Line 14', newResponse)
-    // setResponse(newResponse)
-    setResponseLog([newResponse, ...responseLog])
-  }
-
-  // const checkResponses = response.responseData && <Responses responseLog={responseLog}/>;
-
+const App = () => {
 
 
   return (
-    <main>
-      <section className='App'>
-        <h1>Fun with API</h1>
-        <PromptInput addNewResponse={addNewResponse}/>
-        {/* {checkResponses} */}
-        <Responses responseLog={responseLog}/>
-      </section>
-    </main>
-  );
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path='*' element={<ErrorPage/>}/>
+  </Routes>
+  )
 }
 
 export default App;
