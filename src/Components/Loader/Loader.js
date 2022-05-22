@@ -10,7 +10,6 @@ const Loader = () => {
                 src={crystalBall} 
                 alt='Crystal ball for loading response to your prompt'
             />
-            {/* <div className='loader pos-center'></div> */}
         </section>
     )
 }

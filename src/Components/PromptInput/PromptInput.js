@@ -18,7 +18,7 @@ const PromptInput = ({checkResponse}) => {
             .then(cleanedData => {
                 const newResponse = {
                     prompt: promptInput,
-                    responseData: cleanedData,
+                    responseData: cleanedData
                 }
                 checkResponse(newResponse)
                 setPromptInput('')
@@ -62,10 +62,10 @@ const PromptInput = ({checkResponse}) => {
 
     return (
         <>
-        {displayLoader}
-        {checkForError}
-        {displayForm()}
-    </>
+            {displayLoader}
+            {checkForError}
+            {displayForm()}
+        </>
     )
 }
 
