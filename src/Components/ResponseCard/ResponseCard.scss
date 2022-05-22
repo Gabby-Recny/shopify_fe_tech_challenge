@@ -5,7 +5,6 @@
     overflow-y: scroll;
     padding: 3%;
     margin: 1% 0% 1% 0%;
-    white-space: pre-line;
 }
 
 .response-layout {
@@ -16,6 +15,14 @@
     align-items: flex-start;
 }
 
-.response-layout > label {
+.response-layout > h3 {
     font-weight: bold;
 }
+
+p, h3 {
+    margin: 0;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0;
+}
+
