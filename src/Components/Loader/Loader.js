@@ -1,5 +1,5 @@
 import React from "react";
-import crystalBall from '../assets/crystal-ball.png'
+import crystalBall from '../../assets/crystal-ball.png';
 import './Loader.scss';
 
 const Loader = () => {

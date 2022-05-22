@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './PromptInput.scss';
-import { postNewResponse } from "../utilities/apiCalls";
-import { cleanResponseData } from "../utilities/cleanData";
+import { postNewResponse } from "../../utilities/apiCalls";
+import { cleanResponseData } from "../../utilities/cleanData";
 import Loader from '../Loader/Loader';
 
 const PromptInput = ({checkResponse}) => {

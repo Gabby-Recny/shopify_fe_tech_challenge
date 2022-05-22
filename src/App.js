@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss'; 
 import { Routes, Route } from 'react-router-dom';
-import ErrorPage from './ErrorPage/ErrorPage';
-import Main from './Main/Main';
+import ErrorPage from '../src/Components/ErrorPage/ErrorPage';
+import Main from '../src/Components/Main/Main';
 
 const App = () => {
 

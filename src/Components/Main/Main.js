@@ -2,7 +2,7 @@ import React from 'react';
 import './Main.scss'; 
 import PromptInput from '../PromptInput/PromptInput';
 import Responses from '../Responses/Responses';
-import useLocalStorage from '../utilities/useLocalStorage';
+import useLocalStorage from '../../utilities/useLocalStorage';
 
 const Main = () => {
 
