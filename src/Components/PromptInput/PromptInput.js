@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './PromptInput.scss';
-import { postNewResponse } from "../utilities/apiCalls";
-import { cleanResponseData } from "../utilities/cleanData";
+import { postNewResponse } from "../../utilities/apiCalls";
+import { cleanResponseData } from "../../utilities/cleanData";
 import Loader from '../Loader/Loader';
 
 const PromptInput = ({checkResponse}) => {
@@ -18,7 +18,7 @@ const PromptInput = ({checkResponse}) => {
             .then(cleanedData => {
                 const newResponse = {
                     prompt: promptInput,
-                    responseData: cleanedData,
+                    responseData: cleanedData
                 }
                 checkResponse(newResponse)
                 setPromptInput('')
@@ -62,10 +62,10 @@ const PromptInput = ({checkResponse}) => {
 
     return (
         <>
-        {displayLoader}
-        {checkForError}
-        {displayForm()}
-    </>
+            {displayLoader}
+            {checkForError}
+            {displayForm()}
+        </>
     )
 }
 

@@ -3,17 +3,17 @@ import './ResponseCard.scss';
 
 const ResponseCard = ({generatedResponse, prompt}) => {
     return (
-        <article className='response-card'>
+        <article className='response-card' tabIndex="0">
             <section className='response-layout'>
-                <label htmlFor='prompt'>Prompt:</label>
-                <span name='prompt' id='prompt'>{prompt}</span>
+                <h3>Prompt:</h3>
+                <p id='prompt'>{prompt}</p>
             </section>
             <br></br>
             <section className='response-layout'>
-                <label htmlFor='writtenResponse'>Response:</label>
-                    <span name='writtenResponse' id='writtenResponse'>
+                <h3>Response:</h3>
+                    <p id='writtenResponse'>
                         {generatedResponse.trim()}
-                    </span>
+                    </p>
             </section>
 
         </article>

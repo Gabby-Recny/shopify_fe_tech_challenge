@@ -2,14 +2,11 @@ import React from 'react';
 import './Main.scss'; 
 import PromptInput from '../PromptInput/PromptInput';
 import Responses from '../Responses/Responses';
-import useLocalStorage from '../utilities/useLocalStorage';
+import useLocalStorage from '../../utilities/useLocalStorage';
 
 const Main = () => {
 
-  // const [ responseLog, setResponseLog ] = useLocalStorage("responseLog", [])
-
-  const [ responseLog, setResponseLog ] = React.useState([])
-
+  const [ responseLog, setResponseLog ] = useLocalStorage("responseLog", [])
 
   const addNewResponse = (newResponse) => {
     setResponseLog([newResponse, ...responseLog])
@@ -28,7 +25,9 @@ const Main = () => {
   return (
     <main>
       <section className='main-container'>
-        <h1>Fun with API</h1>
+        <header>
+          <h1>Fun with API</h1>
+        </header>
         <PromptInput checkResponse={checkResponse}/>
         <Responses responseLog={responseLog}/>
       </section>

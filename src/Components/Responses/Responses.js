@@ -6,11 +6,10 @@ const Responses = ({responseLog}) => {
 
     const errorMessage = `You don't have any responses from our API yet, type up and prompt and see what comes out!`
 
-    const formattedResponses = responseLog.map(response => {
-        console.log('Response inside Containr Line 10', response)
+    const formattedResponses = responseLog.map((response, index) => {
         return (
             <ResponseCard
-                key={response.responseData.id}
+                key={index}
                 generatedResponse={response.responseData.generatedResponse}
                 prompt={response.prompt}
             />
