@@ -10,8 +10,8 @@ const ResponseCard = ({generatedResponse, prompt}) => {
             </section>
             <br></br>
             <section className='response-layout'>
-                <label htmlFor='written-response'>Response:</label>
-                    <span name='written-response' id='written-response'>
+                <label htmlFor='writtenResponse'>Response:</label>
+                    <span name='writtenResponse' id='writtenResponse'>
                         {generatedResponse.trim()}
                     </span>
             </section>

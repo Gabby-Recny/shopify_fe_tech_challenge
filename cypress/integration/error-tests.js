@@ -7,4 +7,22 @@ describe('Error Flows', () => {
             .visit('http://localhost:3000/')
         cy.get('textarea').should('be.visible')
     })
+    it('Should show an error message if a response does not come through', () => {
+        cy.visit('http://localhost:3000/')
+        cy.get('textarea')
+        .type('How many woods does a woodchuck chuck?')
+        .should('have.text', 'How many woods does a woodchuck chuck?')
+        cy.get('.submit-btn').click()
+            .intercept('POST', 'https://api.openai.com/v1/engines/text-curie-001/completions', {
+            body: {
+                prompt: `How many woods does a woodchuck chuck?`,
+                temperature: 0.5,
+                max_tokens: 64,
+                top_p: 1.0,
+                frequency_penalty: 0.0,
+                presence_penalty: 0.0
+            }
+        })
+        .get('.prompt-error-msg').should('have.text', 'There seems to be an error on our end. Please refresh and try again!')
+    })
 })
