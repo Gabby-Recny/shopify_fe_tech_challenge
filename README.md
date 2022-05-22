@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Fun with API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Future Features](#future-features)
+- [Tech Stack](#technologies-used)
+- [Install Instructions](#instructions)
+- [Authors/Links](#authorslinks)
 
-## Available Scripts
+## Deployed Application EDIT THIS LINK EDIT THIS LINK EDIT THIS LINK
+[Fun with API](https://radiant-lowlands-33922.herokuapp.com/)
 
-In the project directory, you can run:
+![User Interface for Fun with API](https://user-images.githubusercontent.com/84749512/169719605-52b93d79-8f5f-4c42-adb2-52c655447091.png)
 
-### `npm start`
+## Abstract
+Fun with API is a React application designed to expose the user to the GPT-3 AI model that takes a prompt input and produce outputs that are hard to distinguish from human writing. The application was prompted by the Shopify Frontend Internship challenge for Fall 2022 where I was given the opportunity to showcase my skills in frontend web development. The application features a text area for the user to type a prompt, submit their prompt and receive a response from the AI. Once the response is received, the user is enabled to keep track of their responses using local storage functionality. In addition, the application is responsive to multiple viewports, end-to-end testing coverage using Cypress and has thorough error handling to guide the user through the application. The application utilizes React Router to add further error handling should the user mistype the URL. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Accessibility
 
-### `npm test`
+![Lighthouse Accessibility Score](https://user-images.githubusercontent.com/84749512/169719491-f156311c-555b-4417-aee1-e0bd336a4573.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fun with API is a fully accessibility website in order for the functionality to be enjoyed by diverse set of users. It is designed with semantic JSX elements, has color contrast that is appropriate for color blind users and fully tabbable. The project received a Lighthouse score of 100 and no errors on the WAVE Accessibility Evaluation Tool. 
 
-### `npm run build`
+## Future Features
+- Colorful UI
+- Readable responses
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
-### `npm run eject`
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project
+- [Project Board](https://github.com/Gabby-Recny/shopify_fe_tech_challenge/projects/1)
+- [Challenge Spec](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit#)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## AUTHORS
+- Gabby Recny =[LinkedIn](https://www.linkedin.com/in/gabbyrecny/) || [GitHub](https://github.com/Gabby-Recny)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### - Credits
+- max.icons for the amazing [crystal ball icon](https://www.flaticon.com/free-icons/crystal-ball" title="crystal ball icons)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
