@@ -1,19 +1,18 @@
 # Fun with API
 
 ## Table of Contents
-- [Project Overview](#project-overview)
+- [Abstract](#abstract)
 - [Future Features](#future-features)
 - [Tech Stack](#technologies-used)
-- [Install Instructions](#instructions)
-- [Authors/Links](#authorslinks)
+- [Authors](#authors)
 
-## Deployed Application EDIT THIS LINK EDIT THIS LINK EDIT THIS LINK
+#### Deployed Application
 [Fun with API](https://fun-with-api.herokuapp.com/)
 
 ![User Interface for Fun with API](https://user-images.githubusercontent.com/84749512/169719605-52b93d79-8f5f-4c42-adb2-52c655447091.png)
 
 ## Abstract
-Fun with API is a React application designed to expose the user to the GPT-3 AI model that takes a prompt input and produce outputs that are hard to distinguish from human writing. The application was prompted by the Shopify Frontend Internship challenge for Fall 2022 where I was given the opportunity to showcase my skills in frontend web development. The application features a text area for the user to type a prompt, submit their prompt and receive a response from the AI. Once the response is received, the user is enabled to keep track of their responses using local storage functionality. In addition, the application is responsive to multiple viewports, end-to-end testing coverage using Cypress and has thorough error handling to guide the user through the application. The application utilizes React Router to add further error handling should the user mistype the URL. 
+[Fun with API](https://fun-with-api.herokuapp.com/) is a React application designed to expose the user to the GPT-3 AI model that takes a prompt input and produce outputs that are hard to distinguish from human writing. The application was prompted by the Shopify Frontend Internship challenge for Fall 2022 where I was given the opportunity to showcase my skills in frontend web development. The application features a text area for the user to type a prompt, submit their prompt and receive a response from the AI. Once the response is received, the user is enabled to keep track of their responses using local storage functionality. In addition, the application is responsive to multiple viewports, end-to-end testing coverage using Cypress and has thorough error handling to guide the user through the application. The application utilizes React Router to add further error handling should the user mistype the URL. 
 
 
 ## Accessibility
@@ -50,7 +49,7 @@ Fun with API is a fully accessibility website in order for the functionality to 
 - [Challenge Spec](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit#)
 
 ## AUTHORS
-- Gabby Recny =[LinkedIn](https://www.linkedin.com/in/gabbyrecny/) || [GitHub](https://github.com/Gabby-Recny)
+- Gabby Recny = [LinkedIn](https://www.linkedin.com/in/gabbyrecny/) || [GitHub](https://github.com/Gabby-Recny)
 
 #### Credits
 - max.icons for the amazing [crystal ball icon](https://www.flaticon.com/free-icons/crystal-ball" title="crystal ball icons)
