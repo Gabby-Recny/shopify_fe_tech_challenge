@@ -1,6 +1,6 @@
 describe('Main Comp', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/')
+        cy.visit('https://fun-with-api.herokuapp.com/')
     })
     it('Should be able to type a prompt in the text area', () => {
         cy.get('.submit-btn').should('be.disabled')

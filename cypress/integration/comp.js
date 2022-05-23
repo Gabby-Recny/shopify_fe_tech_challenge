@@ -1,6 +1,6 @@
 describe('Main Comp', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/')
+        cy.visit('https://fun-with-api.herokuapp.com/')
     })
     it('Should have a title', () => {
         cy.get('h1')
