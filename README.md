@@ -8,7 +8,7 @@
 - [Authors/Links](#authorslinks)
 
 ## Deployed Application EDIT THIS LINK EDIT THIS LINK EDIT THIS LINK
-[Fun with API](https://radiant-lowlands-33922.herokuapp.com/)
+[Fun with API](https://fun-with-api.herokuapp.com/)
 
 ![User Interface for Fun with API](https://user-images.githubusercontent.com/84749512/169719605-52b93d79-8f5f-4c42-adb2-52c655447091.png)
 
@@ -52,6 +52,6 @@ Fun with API is a fully accessibility website in order for the functionality to 
 ## AUTHORS
 - Gabby Recny =[LinkedIn](https://www.linkedin.com/in/gabbyrecny/) || [GitHub](https://github.com/Gabby-Recny)
 
-#### - Credits
+#### Credits
 - max.icons for the amazing [crystal ball icon](https://www.flaticon.com/free-icons/crystal-ball" title="crystal ball icons)
 
